@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 <body>
     <section class="dark">
@@ -31,7 +33,7 @@
                             <div class="text-content">
                                 <h4>Ma Videotheque </h4>
                                 <p>Explorer notre vaste collection de films avec notre vidéothèque en ligne. Trouver des classiques intemporels, des dernières sorties et bien plus encore.</p>
-                                <a href="#" class="filled-button">Voir mes films</a>
+                                <a href="#film-section" class="filled-button">Voir mes films</a>
                                 
                             </div>
                         </div>
@@ -43,7 +45,7 @@
                             <div class="text-content">
                                 <h4>Ma Videotheque </h4>
                                 <p>Explorer notre vaste collection de films avec notre vidéothèque en ligne. Trouver des classiques intemporels, des dernières sorties et bien plus encore.</p>
-                                <a href="#" class="filled-button">Voir mes films</a>
+                                <a href="#film-section" class="filled-button">Voir mes films</a>
                                 
                             </div>
                         </div>
@@ -55,7 +57,7 @@
                             <div class="text-content">
                                 <h4>Ma Videotheque</h4>
                                 <p>Explorer notre vaste collection de films avec notre vidéothèque en ligne. Trouver des classiques intemporels, des dernières sorties et bien plus encore.</p>
-                                <a href="#" class="filled-button">Voir mes films</a>
+                                <a href="#film-section" class="filled-button">Voir mes films</a>
                                 
                             </div>
                         </div>
@@ -95,7 +97,7 @@
     </div> 
 </section>
 
-<section class="film-section">  
+<section class="film-section" id="film-section">  
     <div class="container py-4 film-list" align-items:center>
             <!--<h1 class="h1 text-center">Liste de Films</h1>-->
             {% for Films in videotheques %}
@@ -105,18 +107,33 @@
                </a>
                <div class="postcard__text">
                     <h1 class="postcard__tittle blue"><a href="#">{{Films.id}} - {{Films.titre}}</a></h1>
-                    <div class="postcard__realisateur"><i class="fas fa-users mr-2"></i>Réalisateur: {{ Films.realisateur}}</div>
+                    <div class="postcard__realisateur">
+                        <div class="realisateur-label"><i class="fas fa-users mr-2"></i>Réalisateur</div>
+                        <div class="realisateur-value">{{ Films.realisateur }}</div>
+                    </div>
                     <div class="postcard__subtile small">
                         <time datetime="2020-05-25 12:00:00">
-                            <i class="fas fa-calendar-alt mr-2"></i>Année de sortie: {{Films.annee_sortie}}
+                            <i class="fas fa-calendar-alt mr-2"></i>Année de sortie {{Films.annee_sortie}}
                         </time>
                     </div>
                     <div class="postcard__bar"></div>
-                    <div class="postcard__preview-txt">Résumé: {{Films.synopsis}}</div>
-                    <div class="film-details">
-                    <div class="postcard__duration"><i class="fas fa-clock mr-2"></i>Durée: {{ Films.duree }}</div>
-                    <div class="postcard__actors"><i class="fas fa-users mr-2"></i>Acteurs: {{ Films.acteurs }}</div>
-                    <div class="postcard__actors"><i class="fas fa-users mr-2"></i>Genre: {{ Films.genre }}</div>
+                    <div class="postcard__preview">
+                        <div class="preview-label"><i class="fas fa-info-circle mr-2"></i>Résumé</div>
+                        <div class="preview-value">{{ Films.synopsis }}</div>
+                    </div>
+                    <div class="film-details-container">
+                    <div class="postcard__duration">
+                        <div class="duration-label"><i class="fas fa-clock mr-2"></i>Durée</div>
+                        <div class="duration-value">{{ Films.duree }}</div>
+                    </div>
+                    <div class="postcard__actors">
+                        <div class="actors-label"><i class="fas fa-users mr-2"></i>Acteurs</div>
+                        <div class="actors-value">{{ Films.acteurs }}</div>
+                    </div>
+                    <div class="postcard__genre">
+                        <div class="genre-label"><i class="fas fa-film mr-2"></i>Genre</div>
+                        <div class="genre-value">{{ Films.genre }}</div>
+                    </div>
                     <div class="button-space"></div>
                     </div>
                     <ul class="button-group">
@@ -140,5 +157,32 @@
     {% endfor %}
     </div>
 </section>
+
+<div class="scroll-to-top">
+    <a href="#top" class="scroll-link" title="Remonter en haut de la page">
+        <i class="fas fa-arrow-up" style="font-size: 24px;"></i>
+    </a>
+</div>
+
+<script>
+
+    function toggleScrollToTop() {
+        var scrollButton = document.querySelector('.scroll-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = 'block';
+        } else {
+            scrollButton.style.display = 'none';
+        }
+    }
+
+    window.onscroll = function() {
+        toggleScrollToTop();
+    };
+    document.querySelector('.scroll-link').addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+
 </body>
 </html>

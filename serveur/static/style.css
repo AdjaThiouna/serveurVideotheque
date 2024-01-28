@@ -34,11 +34,15 @@ body {
 	margin: 0;
 }
 
-/*.film-item {
-	width: calc(40% - 10px) ;
-    width: calc(33.33% - 10px) ; 
-    margin-bottom: 20px; 
-}*/
+.film-details-container {
+    margin-top: 10px; /* Vous pouvez ajuster la valeur en fonction de l'espace souhaité */
+	flex-direction: column;
+}
+.postcard__duration,
+.postcard__actors,
+.postcard__actors {
+    margin-bottom: 10px; /* Vous pouvez ajuster la valeur en fonction de l'espace souhaité */
+}
 
 .film-item {
     width: 48%; /* Ajustez la largeur selon vos préférences */
@@ -46,6 +50,76 @@ body {
     margin-bottom: 20px; /* Ajoute une marge en bas pour créer de l'espace entre les éléments */
     box-sizing: border-box; /* Garantit que la largeur inclut la marge et le rembourrage */
 }
+.postcard__text{
+	text-align: justify;
+}
+
+.postcard__realisateur {
+    display: flex;
+	align-items: center;
+}
+.postcard__realisateur .realisateur-label {
+    font-weight: bold; 
+    color: #333; 
+	margin-right: 5px;
+}
+
+.postcard__realisateur .realisateur-value {
+    font-style: italic; /* Par exemple, mettre en italique */
+    color: #555; /* Choisir une couleur différente si nécessaire */
+}
+/* Styles pour l'élément de résumé */
+.postcard__preview {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Ajouter une marge en bas pour l'espace */
+}
+
+.preview-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Styles pour l'élément de durée */
+.postcard__duration {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.duration-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Styles pour l'élément d'acteurs */
+.postcard__actors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.actors-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Styles pour l'élément de genre */
+.postcard__genre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.genre-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
 
 .button-group {
 	display: flex;
