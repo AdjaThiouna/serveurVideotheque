@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout de Film</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_new.css') }}"> 
+
+</head>
+<body>
+    <section>
+        <form id="contact" method="post" onsubmit="disableButton()">
+            <h1>Ajout de Film</h1>
+            <div class="inputbox">
+                <ion-icon name="videocam-outline"></ion-icon>
+                <input name="id" type="number" required>
+                <label for="id">Numéro du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="film-outline"></ion-icon>
+                <input name="titre" type="text" required>
+                <label for="titre">Titre du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input name="realisateur" type="text" required>
+                <label for="realisateur">Réalisateur du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <input name="annee_sortie" type="text" required>
+                <label for="annee_sortie">Année de sortie du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="time-outline"></ion-icon>
+                <input name="duree" type="text" required>
+                <label for="duree">Duree du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="pricetag-outline"></ion-icon>
+                <input name="genre" type="text" required>
+                <label for="genre">Genre du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="people-outline"></ion-icon>
+                <input name="acteurs" type="text" required>
+                <label for="acteurs">Acteurs du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="image-outline"></ion-icon>
+                <input name="image" type="text" required>
+                <label for="image">Image du film</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="reader-outline"></ion-icon>
+                <input name="synopsis" rows="5" id="synopsis" required></input>
+                <label for="synopsis">Synopsis ou Résumé du film</label>
+            </div>
+            <button type="submit" id="form-submit">Ajouter le Film <ion-icon name="send-outline"></ion-icon></button>
+            <div class="register">
+                <p>Vous souhaitez annuler ? <a href="{{ url_for('index')}}">Accueil</a></p>
+            </div>
+        </form>
+    </section>
+    <script>
+        function disableButton() {
+            document.getElementById("form-submit").disabled = true;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>

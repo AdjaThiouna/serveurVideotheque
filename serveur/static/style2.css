@@ -1,0 +1,106 @@
+body {
+    background-color: #f4f4f4; /* Set your desired background color */
+}
+
+.callback-form {
+    padding: 50px 0;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form fieldset {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Adjust the height as needed */
+}
+
+.dark-section {
+    position: relative;
+    background-color: #222222; /* Set your desired background color */
+    color: #fff; /* Set text color to white or another contrasting color */
+    padding: 50px 0;
+    text-align: center;
+}
+/*.dark-section {
+    background-color: #ffffff; 
+    color: #000000;  
+    padding: 50px 0;
+    text-align: center;
+}
+*/
+.add-film-content img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.add-film-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.add-film-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.add-film-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.filled-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #3498db; /* Set your button color */
+    color: #fff;
+    border-radius: 5px;
+}
+
+#form-submit {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#form-submit:hover {
+    background-color: #2980b9;
+}
+
+
+/* Optional: Add some responsiveness */
+@media (max-width: 767px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}

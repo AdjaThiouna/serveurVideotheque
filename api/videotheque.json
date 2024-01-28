@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "titre": "Inception",
+    "realisateur": "Christopher Nolan",
+    "annee_sortie": "2010",
+    "genre": [
+      "['Science-fiction'",
+      " 'Action']"
+    ],
+    "acteurs": [
+      "['Leonardo DiCaprio'",
+      " 'Joseph Gordon-Levitt'",
+      " 'Ellen Page']"
+    ],
+    "duree": "1h47mn",
+    "synopsis": "Dom Cobb est un voleur exp\u00e9riment\u00e9 qui vole des secrets pr\u00e9cieux en p\u00e9n\u00e9trant dans le subconscient de ses cibles pendant leurs r\u00eaves.",
+    "image": "https://www.daily-movies.ch/wp-content/uploads/2014/11/daily-movies.ch_Inception.jpeg"
+  },
+  {
+    "id": 2,
+    "titre": "Stranger Things",
+    "realisateur": "The Duffer Brothers",
+    "annee_sortie": "2016",
+    "genre": [
+      "['Drame'",
+      " 'Fantasy'",
+      " 'Horreur']"
+    ],
+    "acteurs": [
+      "['Winona Ryder'",
+      " 'David Harbour'",
+      " 'Millie Bobby Brown']"
+    ],
+    "duree": "1h66min",
+    "synopsis": "Une petite ville est secou\u00e9e par la disparition soudaine d'un jeune gar\u00e7on et l'apparition d'une fille aux pouvoirs surnaturels.",
+    "image": "https://www.daily-movies.ch/wp-content/uploads/2014/11/daily-movies.ch_Inception.jpeg"
+  },
+  {
+    "id": 3,
+    "titre": "Titanic",
+    "realisateur": "James Cameron",
+    "annee_sortie": 1997,
+    "genre": [
+      "Drame",
+      "Romance"
+    ],
+    "acteurs": [
+      "Leonardo DiCaprio",
+      "Kate Winslet",
+      "Billy Zane"
+    ],
+    "duree": "3h15min",
+    "synopsis": "L'histoire \u00e9pique d'un amour passionn\u00e9 entre un artiste sans le sou et une jeune aristocrate \u00e0 bord du RMS Titanic, le navire de croisi\u00e8re le plus grand et le plus moderne de son \u00e9poque.",
+    "image": "https://fwcdn.pl/fpo/01/87/187/7885890.6.jpg"
+  },
+  {
+    "id": 4,
+    "titre": "The Matrix",
+    "realisateur": "The Wachowskis",
+    "annee_sortie": 1999,
+    "genre": [
+      "Action",
+      "Science-fiction",
+      "Fiction"
+    ],
+    "acteurs": [
+      "Keanu Reeves",
+      "Carrie-Anne Moss",
+      "Laurence Fishburne"
+    ],
+    "duree": "2h16min",
+    "synopsis": "Un pirate informatique d\u00e9couvre la v\u00e9rit\u00e9 sur la r\u00e9alit\u00e9, menant \u00e0 une r\u00e9bellion contre des machines intelligentes qui contr\u00f4lent le monde.",
+    "image": "https://example.com/film2.jpg"
+  },
+  {
+    "id": 5,
+    "titre": "The Mother",
+    "realisateur": "Jane Doe",
+    "annee_sortie": "2015",
+    "genre": [
+      "Drama",
+      "Mystery"
+    ],
+    "acteurs": [
+      "Jennifer Lopez",
+      "Misha Green",
+      " Benny"
+    ],
+    "duree": "2h15mn",
+    "synopsis": "Une tueuse \u00e0 gages se retrouve forc\u00e9e de sortir de sa cachette afin de prot\u00e9ger sa fille qu'elle a abandonn\u00e9e il y a des ann\u00e9es, qui est prise pour cible par ses anciens coll\u00e8gues.",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eWLlfvHr4qt7w8HJfRljJRD4LGc.jpg"
+  },
+  {
+    "id": 6,
+    "titre": "Jolie D\u00e9sastre",
+    "realisateur": "John Smith",
+    "annee_sortie": 2018,
+    "genre": [
+      "Romance",
+      "Com\u00e9die"
+    ],
+    "acteurs": [
+      "Bradley Cooper",
+      "Emma Stone",
+      "Ryan Reynolds"
+    ],
+    "duree": "1h50mn",
+    "synopsis": "Une com\u00e9die romantique \u00e9mouvante qui vous fera rire et pleurer.",
+    "image": "https://example.com/jolie-desastre-image.jpg"
+  },
+  {
+    "id": 7,
+    "titre": "Think Like a Man",
+    "realisateur": "Emily Johnson",
+    "annee_sortie": 2012,
+    "genre": [
+      "Com\u00e9die",
+      "Romance"
+    ],
+    "acteurs": [
+      "Kevin Hart",
+      "Gabrielle Union",
+      "Michael Ealy"
+    ],
+    "duree": "2h05mn",
+    "synopsis": "Une com\u00e9die hilarante sur l'amour et les relations, bas\u00e9e sur le best-seller.",
+    "image": "https://example.com/think-like-a-man-image.jpg"
+  },
+  {
+    "id": 8,
+    "titre": "Me Before You",
+    "realisateur": "Michael Anderson",
+    "annee_sortie": 2016,
+    "genre": [
+      "Drame",
+      "Romance"
+    ],
+    "acteurs": [
+      "Emilia Clarke",
+      "Sam Claflin",
+      "Janet McTeer"
+    ],
+    "duree": "2h10mn",
+    "synopsis": "Un voyage \u00e9motionnel sur l'amour et la d\u00e9couverte de soi qui vous laissera en larmes.",
+    "image": "https://example.com/me-before-you-image.jpg"
+  },
+  {
+    "id": 9,
+    "titre": "Trois M\u00e8tres au-dessus du Ciel",
+    "realisateur": "Sophie Dupont",
+    "annee_sortie": 2010,
+    "genre": [
+      "Drame",
+      "Romance"
+    ],
+    "acteurs": [
+      "Mario Casas",
+      "Maria Valverde",
+      "\u00c1lvaro Cervantes"
+    ],
+    "duree": "1h45mn",
+    "synopsis": "Une histoire d'amour passionn\u00e9e qui transcende les fronti\u00e8res.",
+    "image": "https://example.com/cinq-metres-au-dessus-du-ciel-image.jpg"
+  },
+  {
+    "id": 10,
+    "titre": "One Day",
+    "realisateur": "Lone Schefig",
+    "annee_sortie": 2011,
+    "genre": [
+      "Drame",
+      "Romance"
+    ],
+    "acteurs": [
+      "Ane Hathaway",
+      "Jim Sturgess",
+      "Romola Garai"
+    ],
+    "duree": "1h45mn",
+    "synopsis": "Emma et Dexter passent la nuit ensemble apr\u00e8s leur soir\u00e9e de fin d'\u00e9tude et d\u00e9cident de rester amis. Lui est insouciant et frivole, elle est bourr\u00e9e de complexes. Pendant 20 ans, Dexter et Emma vont s'adorer, se s\u00e9parer, se d\u00e9tester, se manquer. Finiront-ils par comprendre qu'ils ne sont jamais aussi heureux que lorsqu'ils sont ensemble ?",
+    "image": "https://example.com/cinq-metres-au-dessus-du-ciel-image.jpg"
+  }
+]
